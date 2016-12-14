@@ -12,6 +12,8 @@ describe "Sitespec" do
     /
     /css/style.css
     /img/a.png
+    /img/simple-image1.png
+    /img/simple-image2.png
   ].each do |path|
     describe "GET #{path}", :sitespec do
       binding.pry
