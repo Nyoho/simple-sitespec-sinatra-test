@@ -5,3 +5,6 @@ source 'https://rubygems.org'
 gem 'rspec'
 gem 'sitespec'
 gem 'sinatra'
+
+gem 'pry'
+gem 'pry-byebug'

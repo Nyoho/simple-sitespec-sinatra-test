@@ -1,5 +1,7 @@
 require 'sitespec/rspec'
 require 'myrack'
+require 'pry'
+require 'pry-byebug'
 
 describe "Sitespec" do
   let(:app) do
@@ -12,6 +14,8 @@ describe "Sitespec" do
     /img/a.png
   ].each do |path|
     describe "GET #{path}", :sitespec do
+      binding.pry
+      # break Sitespec::Artifact#create
       it "returns 200" do
         expect(get(path).status).to eq 200
       end
